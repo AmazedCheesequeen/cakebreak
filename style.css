@@ -1,0 +1,33 @@
+/*---- GENERELLE TING ----*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*---- FONT ----*/
+
+/*---- NAVIGATIONSBAR ----*/
+
+/*---- START ----*/
+
+/*---- KAGER ----*/
+
+/*-- FILTER --*/
+
+/*---- GRID/DATA CONTAINER ----*/
+
+/*---- NYHEDSBREV ----*/
+
+/*---- FOOTER ----*/
+
+/*---- ANIMATIONER ----*/
+
+/*---- MEDIA QUERIES ----*/
