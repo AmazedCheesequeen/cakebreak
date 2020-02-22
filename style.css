@@ -14,13 +14,87 @@ html {
 
 /*---- FONT ----*/
 
+
+@font-face {
+    font-family: 'great_wishesregular';
+    src: url('great_wishes-webfont.woff2') format('woff2'),
+        url('great_wishes-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*---- NAVIGATIONSBAR ----*/
 
 /*---- START ----*/
 
+.data-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    padding: 0 10vw;
+}
+
+.kage {
+    border: 3px solid coral;
+    border-radius: 50px 5px;
+    padding: 3vw;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height 60%;
+    object-fit: contain;
+}
+
+.kage h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.kage p {
+    font-family: 'Raleway', sans-serif;
+}
+
 /*---- KAGER ----*/
 
 /*-- FILTER --*/
+
+button {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: lightpink;
+    border-radius: 20px;
+    margin: 0.2rem 10rem 0.2rem 10rem;
+    font-size: 1.3rem;
+
+    padding: 0.4rem;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+    button {
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        background-color: lightpink;
+        border-radius: 20px;
+        margin: 0.3rem;
+        font-size: 1.3rem;
+
+        padding: 0.4rem;
+        cursor: pointer;
+    }
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+.valgt {
+    background-color: rosybrown;
+}
 
 /*---- GRID/DATA CONTAINER ----*/
 

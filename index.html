@@ -1,71 +1,74 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cakebreak</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-   <header>
+    <header>
 
-       <nav>
+        <nav>
 
-          <div class="logo"></div>
+            <div class="logo"></div>
 
-           <ul>
-               <li><a href="#start">Start</a></li>
-               <li><a href="#kager">Kager</a></li>
-               <li><a href="#nyhedsbrev">Nyhedsbrev</a></li>
-           </ul>
+            <ul>
+                <li><a href="#start">Start</a></li>
+                <li><a href="#kager">Kager</a></li>
+                <li><a href="#nyhedsbrev">Nyhedsbrev</a></li>
+            </ul>
 
-       </nav>
+        </nav>
 
 
-   </header>
+    </header>
 
-   <section id="start">
+    <section id="start">
 
-       <div class="start_txt">
+        <div class="start_txt">
 
-           <h1>Mangler du kager i dit liv?</h1>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus cursus magna eu consectetur. Morbi dapibus hendrerit lorem nec mollis. Donec mollis vulputate neque, in porta ex dapibus vel.</p>
+            <h1>Mangler du kager i dit liv?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus cursus magna eu consectetur. Morbi dapibus hendrerit lorem nec mollis. Donec mollis vulputate neque, in porta ex dapibus vel.</p>
 
-       </div>
+        </div>
 
-   </section>
+    </section>
 
-   <section id="kager">
 
-       <nav class="filter">
-           <ul>
-               <li id="cheesecake">Cheesecake</li>
-               <li id="chokoladekage">Chokoladekage</li>
-               <li id="cupcake">Cupcake</li>
-               <li id="lagkage">Lagkage</li>
-               <li id="taerte">Tærte</li>
-           </ul>
-       </nav>
+    <nav>
+        <button class="filter valgt" data-kategori="alle" class="valgt">Alle</button>
+        <button class="filter" data-kategori="lagkage">Lagkage</button>
+        <button class="filter" data-kategori="taerte">Tærte</button>
+        <button class="filter" data-kategori="chokoladekage">Chokoladekage</button>
+        <button class="filter" data-kategori="cheesecake">Cheesecake</button>
+        <button class="filter" data-kategori="cupcake">Cupcake</button>
+    </nav>
 
-   </section>
 
-   <section class="data_container"></section>
-   <template>
-       <div class="container">
-           <img class="billede" src="" alt="">
-           <p class="navn"></p>
-       </div>
-   </template>
+    <section class="data_container"></section>
 
-   <section id="nyhedsbrev"></section>
+    <template>
+        <article id="" class="kage">
+            <h2></h2>
+            <img src="" alt="">
+            <p class="navn"></p>
+            <p class="beskrivelse"></p>
 
-   <footer>
+        </article>
+    </template>
 
-   <p>Michelle Aimi Trinh, Mona Dowrch og Zainab Waleed Abbas 2020</p>
+    <section id="nyhedsbrev"></section>
 
-   </footer>
+    <footer>
 
-   <script src="script.js"></script>
-</body>
-</html>
+        <p>Michelle Aimi Trinh, Mona Dowrch og Zainab Waleed 2020</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body></html>
