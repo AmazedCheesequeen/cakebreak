@@ -45,7 +45,11 @@ function visKager() {
         if (kage.gsx$kategori.$t == filter || filter == "alle") {
             let klon = template.cloneNode(true).content;
             klon.querySelector("h2").textContent = kage.gsx$kategori.$t;
+<<<<<<< HEAD
             klon.querySelector("img").src = `img/${kage.gsx$billede.$t}-sm.jpg)`;
+=======
+            klon.querySelector("img").src = `../img/${kage.gsx$billede.$t}.jpg`;
+>>>>>>> origin/master
             klon.querySelector(".navn").textContent += kage.gsx$navn.$t;
             klon.querySelector(".beskrivelse").textContent += kage.gsx$beskrivelse.$t;
 
