@@ -35,7 +35,7 @@ function filtrerKager() {
 }
 
 function visKager() {
-    let container = document.querySelector(".data-container");
+    let container = document.querySelector(".data_container");
     let template = document.querySelector("template");
     let article = document.querySelector("article");
     container.innerHTML = "";
