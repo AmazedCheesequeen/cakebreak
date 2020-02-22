@@ -12,6 +12,10 @@ html {
     scroll-behavior: smooth;
 }
 
+p{
+    font-family: 'Raleway', sans-serif;
+}
+
 /*---- FONT ----*/
 
 
@@ -97,6 +101,65 @@ button:hover {
 }
 
 /*---- GRID/DATA CONTAINER ----*/
+
+
+/*---- POP OP ----*/
+
+.pop_op {
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(255,255,255,0.7);
+    top: 0;
+    left: 0;
+
+    display: none;
+}
+
+.pop_op .pop_box{
+    width: 40vw;
+    height: 40vw;
+    margin: 2vw auto;
+
+    background-color: white;
+    box-shadow: 0.4vw 0.4vw 2vw #D9D4D0;
+}
+
+.pop_op .exit {
+    width: 5vw;
+    height: 5vw;
+
+    position: fixed;
+    top: 2vw;
+    right: 3vw;
+
+    background-image: url(pics/exit.svg);
+    background-size: cover;
+}
+
+.pop_op .pop_billede{
+    width: 40vw;
+    height: 25vw;
+
+    object-fit: cover;
+
+    background-color: lightpink;
+    position: fixed;
+    top: 2vw;
+    left: 30vw;
+}
+
+.pop_op .beskrivelse{
+    position: fixed;
+    top: 25vw;
+    left: 30vw;
+
+    width: 40vw;
+    height: 100%;
+
+    padding: 2vw;
+}
+
 
 /*---- NYHEDSBREV ----*/
 
