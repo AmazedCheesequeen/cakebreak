@@ -29,6 +29,83 @@ p {
 }
 
 /*---- NAVIGATIONSBAR ----*/
+.header1 nav {
+    text-align: end;
+}
+
+.header1 nav ul {
+    display: inline;
+}
+
+.header1 nav ul li {
+    display: inline;
+    padding: 1vw;
+    border-right: 4px solid white;
+    font-size: 20px;
+}
+
+.header1 nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+#videoBG {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+
+.header {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+.header1 img {
+    height: 8vw;
+    z-index: 1;
+    left: -1vw;
+    position: absolute;
+
+}
+
+.start_txt {
+    color: white;
+    font-size: 2em;
+    padding: 4vw;
+    font-family: 'great_wishesregular';
+}
+
+.filter {
+    text-align: center;
+}
+
+.filter ul li {
+    display: inline-block;
+    border: solid black 1px;
+    background-color: #A1734D;
+    color: white;
+    padding: 0.5vw;
+    margin: 1vw;
+    font-size: 1.5vw;
+    list-style: none;
+    cursor: pointer;
+    list-style: none;
+}
+
+
+.filter ul li:hover {
+    background: #FFE9B0;
+    color: black;
+}
+
 
 /*---- START ----*/
 
@@ -78,6 +155,11 @@ img:hover {
 
 
 /*-- FILTER --*/
+/*
+nav .button {
+    text-align: center;
+}
+*/
 
 nav {
     display: flex;
@@ -115,6 +197,9 @@ button:hover {
 
 
 /*---- GRID/DATA CONTAINER ----*/
+.billede {
+    border-radius: 50%;
+}
 
 
 /*---- POP OP ----*/
@@ -131,8 +216,13 @@ button:hover {
 }
 
 .pop_op .pop_box {
+<<<<<<< HEAD
     width: 90vw;
     height: 100vh;
+=======
+    width: 40vw;
+    height: 40vw;
+>>>>>>> origin/master
     margin: 2vw auto;
 
     background-color: white;
@@ -152,8 +242,14 @@ button:hover {
 }
 
 .pop_op .pop_billede {
+<<<<<<< HEAD
     width: 60vw;
     height: 60vw;
+=======
+    width: 40vw;
+    height: 25vw;
+
+>>>>>>> origin/master
     object-fit: cover;
 
     background-color: lightpink;
@@ -271,8 +367,45 @@ button:hover {
 
 
 /*---- NYHEDSBREV ----*/
+.nyhedsbrev_billede img {
+    height: 38vw;
+    width: 100vw;
+    object-fit: cover;
+    padding-top: 3vw;
+    z-index: -1;
+}
+.nyhedsbrev_text {
+    position: relative;
+    margin-top: -39%;
+    text-align: center;
+    font-size: 4rem;
+
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-left: 27vw;
+    margin-top: 12vw;
+    cursor: pointer;
+
+}
+
+.input_text {
+    background-color: black;
+    color: white;
+    padding: 0.7vw;
+}
+
+.input-field {
+    width: 40vw;
+}
+
 
 /*---- FOOTER ----*/
+
+
 
 /*---- ANIMATIONER ----*/
 
