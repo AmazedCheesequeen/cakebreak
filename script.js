@@ -44,9 +44,9 @@ function visKager() {
     kager.feed.entry.forEach(kage => {
         if (kage.gsx$kategori.$t == filter || filter == "alle") {
             let klon = template.cloneNode(true).content;
-            klon.querySelector("h2").textContent = kage.gsx$kategori.$t;
+            klon.querySelector("h2").textContent = kage.gsx$navn.$t;
             klon.querySelector(".billede").src = `../img/${kage.gsx$billede.$t}.jpg`;
-            klon.querySelector(".navn").textContent += kage.gsx$navn.$t;
+            klon.querySelector(".navn").textContent += kage.gsx$kategori.$t;
             //klon.querySelector(".beskrivelse").textContent += kage.gsx$beskrivelse.$t;
 
             //Bruges til at vide hvornår pop up skal sættes op (jeg skal lige spørge en ven om alt det tekniske bag det så kommer jeg med en bedre forklaring)
@@ -62,7 +62,7 @@ function visKager() {
     });
 }
 
-function popOp (event) {
+function popOp(event) {
 
     let popOpScreen = document.querySelector(".pop_op");
 

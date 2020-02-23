@@ -12,7 +12,7 @@ html {
     scroll-behavior: smooth;
 }
 
-p{
+p {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -21,8 +21,8 @@ p{
 
 @font-face {
     font-family: 'great_wishesregular';
-    src: url('great_wishes-webfont.woff2') format('woff2'),
-        url('great_wishes-webfont.woff') format('woff');
+    src: url('font/great_wishes-webfont.woff2') format('woff2'),
+        url('font/great_wishes-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -40,65 +40,79 @@ p{
 }
 
 .kage {
-    border: 3px solid black;
     padding: 3vw;
     margin-top: 3rem;
+    text-align: center;
+    align-items: center;
+
     cursor: pointer;
+
 }
 
 img {
-    width: 100%;
-    height 60%;
-    object-fit: contain;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+img:hover {
+    opacity: 70%;
+    transform: scale(1.1)
 }
 
 .kage h2 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'great_wishesregular';
     font-size: 1.5rem;
     text-align: center;
 }
 
 .kage p {
     font-family: 'Raleway', sans-serif;
+    color: #ff8fbb;
+
+
 }
 
 /*---- KAGER ----*/
 
+
+
 /*-- FILTER --*/
 
-button {
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    background-color: lightpink;
-    border-radius: 20px;
-    margin: 0.2rem 10rem 0.2rem 10rem;
-    font-size: 1.3rem;
+nav {
+    display: flex;
+    justify-content: center;
+}
 
-    padding: 0.4rem;
+button {
+
+    font-family: 'great_wishesregular';
+    color: white;
+    background-color: #ff8fbb;
+    font-size: 1rem;
+    border-radius: 20px;
+
     cursor: pointer;
 }
 
 @media screen and (min-width: 600px) {
     button {
-        font-family: 'Raleway', sans-serif;
+        font-family: 'great_wishesregular';
         color: white;
-        background-color: lightpink;
+        background-color: #ff8fbb;
         border-radius: 20px;
-        margin: 0.3rem;
         font-size: 1.3rem;
+        margin: 0.3rem;
 
-        padding: 0.4rem;
         cursor: pointer;
     }
 }
 
 button:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    opacity: 70%;
 }
 
-.valgt {
-    background-color: rosybrown;
-}
 
 /*---- GRID/DATA CONTAINER ----*/
 
@@ -109,16 +123,16 @@ button:hover {
     width: 100vw;
     height: 100%;
     position: fixed;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255, 255, 255, 0.7);
     top: 0;
     left: 0;
 
     display: none;
 }
 
-.pop_op .pop_box{
-    width: 40vw;
-    height: 40vw;
+.pop_op .pop_box {
+    width: 90vw;
+    height: 100vh;
     margin: 2vw auto;
 
     background-color: white;
@@ -137,28 +151,123 @@ button:hover {
     background-size: cover;
 }
 
-.pop_op .pop_billede{
-    width: 40vw;
-    height: 25vw;
-
+.pop_op .pop_billede {
+    width: 60vw;
+    height: 60vw;
     object-fit: cover;
 
     background-color: lightpink;
     position: fixed;
-    top: 2vw;
-    left: 30vw;
+    top: 15vw;
+    left: 20vw;
 }
 
-.pop_op .beskrivelse{
+.pop_billede:hover {
+    opacity: 100%;
+    transform: none;
+}
+
+.pop_op .beskrivelse {
     position: fixed;
-    top: 25vw;
-    left: 30vw;
+    text-align: center;
 
-    width: 40vw;
-    height: 100%;
-
-    padding: 2vw;
+    margin: 3rem;
+    bottom: 3rem;
 }
+
+@media screen and (min-width:600px) {
+
+    .pop_op .pop_box {
+        width: 90vw;
+        height: 100vh;
+        margin: 2vw auto;
+
+        background-color: white;
+        box-shadow: 0.4vw 0.4vw 2vw #D9D4D0;
+    }
+
+    .pop_op .exit {
+        width: 5vw;
+        height: 5vw;
+
+        position: fixed;
+        top: 2vw;
+        right: 3vw;
+
+        background-image: url(pics/exit.svg);
+        background-size: cover;
+    }
+
+    .pop_op .pop_billede {
+        width: 50vw;
+        height: 50vw;
+        object-fit: cover;
+
+        background-color: lightpink;
+        position: fixed;
+        top: 10vw;
+        left: 25vw;
+    }
+
+    .pop_op .beskrivelse {
+        position: fixed;
+        text-align: center;
+
+        margin: 3rem;
+        bottom: 3rem;
+    }
+
+
+}
+
+@media screen and (min-width:840px) {
+
+    .pop_op .pop_box {
+        width: 90vw;
+        height: 100vh;
+        margin: 2vw auto;
+
+        background-color: white;
+        box-shadow: 0.4vw 0.4vw 2vw #D9D4D0;
+    }
+
+    .pop_op .exit {
+        width: 5vw;
+        height: 5vw;
+
+        position: fixed;
+        top: 2vw;
+        right: 3vw;
+
+        background-image: url(pics/exit.svg);
+        background-size: cover;
+    }
+
+    .pop_op .pop_billede {
+        width: 40vw;
+        height: 40vw;
+        object-fit: cover;
+
+        background-color: lightpink;
+        position: fixed;
+        top: 5vw;
+        left: 30vw;
+    }
+
+    .pop_op .beskrivelse {
+        position: fixed;
+        text-align: center;
+
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+
+}
+
+
+
+
 
 
 /*---- NYHEDSBREV ----*/
