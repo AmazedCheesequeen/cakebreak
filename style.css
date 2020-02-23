@@ -216,13 +216,9 @@ button:hover {
 }
 
 .pop_op .pop_box {
-<<<<<<< HEAD
     width: 90vw;
     height: 100vh;
-=======
-    width: 40vw;
-    height: 40vw;
->>>>>>> origin/master
+
     margin: 2vw auto;
 
     background-color: white;
@@ -242,14 +238,8 @@ button:hover {
 }
 
 .pop_op .pop_billede {
-<<<<<<< HEAD
     width: 60vw;
     height: 60vw;
-=======
-    width: 40vw;
-    height: 25vw;
-
->>>>>>> origin/master
     object-fit: cover;
 
     background-color: lightpink;
@@ -374,6 +364,7 @@ button:hover {
     padding-top: 3vw;
     z-index: -1;
 }
+
 .nyhedsbrev_text {
     position: relative;
     margin-top: -39%;
