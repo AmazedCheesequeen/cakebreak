@@ -29,59 +29,60 @@ p {
 }
 
 /*---- NAVIGATIONSBAR ----*/
-.header1 nav {
-    text-align: end;
+
+header{
+    display: inline;
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    z-index: 3;
 }
 
-.header1 nav ul {
-    display: inline;
+header nav{
+    background-color: lightpink;
+    width: 100%;
+    height: 100%;
 }
 
-.header1 nav ul li {
+header nav ul li {
     display: inline;
-    padding: 1vw;
-    border-right: 4px solid white;
+
+
     font-size: 20px;
 }
 
-.header1 nav ul li a {
+header nav ul li a {
+    padding: 1vw;
     text-decoration: none;
     color: white;
     display: inline-block;
-}
-
-#videoBG {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 50%;
-    object-fit: cover;
-}
-
-
-.header {
-    display: flex;
-    height: 100%;
-    width: 100%;
-
-}
-
-
-
-.header1 img {
-    height: 8vw;
-    z-index: 1;
-    left: -1vw;
-    position: absolute;
-
-}
-
-.start_txt {
-    color: white;
-    font-size: 2em;
-    padding: 4vw;
     font-family: 'great_wishesregular';
+    border-right: 0.1vw solid white;
 }
+
+header nav ul li:last-child a {
+    border-right: 0 solid white;
+}
+
+
+ .logo_container {
+    width: 50%;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+
+}
+
+.logo_container .logo{
+    width: 50%;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+
+}
+
 
 .filter {
     text-align: center;
@@ -109,46 +110,35 @@ p {
 
 /*---- START ----*/
 
-.data_container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 2rem;
-    padding: 0 10vw;
-}
+#start{
+    margin: 0;
+    padding: 0;
 
-.kage {
-    padding: 3vw;
-    margin-top: 3rem;
-    text-align: center;
-    align-items: center;
-
-    cursor: pointer;
+    width: 100vw;
+    height: 35vw;
 
 }
 
-img {
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
+video{
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: -1;
 }
 
-img:hover {
-    opacity: 70%;
-    transform: scale(1.1)
-}
-
-.kage h2 {
+.start_txt {
+    color: lightblue;
+    font-size: 2em;
+    padding: 4vw;
     font-family: 'great_wishesregular';
-    font-size: 1.5rem;
-    text-align: center;
 }
 
-.kage p {
-    font-family: 'Raleway', sans-serif;
-    color: #ff8fbb;
 
-
-}
 
 /*---- KAGER ----*/
 
@@ -177,18 +167,7 @@ button {
     cursor: pointer;
 }
 
-@media screen and (min-width: 600px) {
-    button {
-        font-family: 'great_wishesregular';
-        color: white;
-        background-color: #ff8fbb;
-        border-radius: 20px;
-        font-size: 1.3rem;
-        margin: 0.3rem;
 
-        cursor: pointer;
-    }
-}
 
 button:hover {
     transform: scale(1.1);
@@ -197,8 +176,47 @@ button:hover {
 
 
 /*---- GRID/DATA CONTAINER ----*/
+
+.data_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    padding: 0 10vw;
+}
+
+.kage {
+    padding: 3vw;
+    margin-top: 3rem;
+    text-align: center;
+    align-items: center;
+
+    cursor: pointer;
+
+}
+
 .billede {
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
+    object-fit: cover;
+}
+
+.billede:hover {
+    opacity: 70%;
+    transform: scale(1.1)
+}
+
+.kage h2 {
+    font-family: 'great_wishesregular';
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.kage p {
+    font-family: 'Raleway', sans-serif;
+    color: #ff8fbb;
+
+
 }
 
 
@@ -217,7 +235,7 @@ button:hover {
 
 .pop_op .pop_box {
     width: 90vw;
-    height: 100vh;
+    height: 77%;
 
     margin: 2vw auto;
 
@@ -226,129 +244,34 @@ button:hover {
 }
 
 .pop_op .exit {
-    width: 5vw;
-    height: 5vw;
-
-    position: fixed;
-    top: 2vw;
-    right: 3vw;
+    width: 10vw;
+    height: 10vw;
 
     background-image: url(pics/exit.svg);
     background-size: cover;
+
 }
 
 .pop_op .pop_billede {
-    width: 60vw;
+    width: 90vw;;
     height: 60vw;
     object-fit: cover;
 
     background-color: lightpink;
     position: fixed;
     top: 15vw;
-    left: 20vw;
+    left: 5vw;
 }
 
-.pop_billede:hover {
-    opacity: 100%;
-    transform: none;
-}
 
 .pop_op .beskrivelse {
     position: fixed;
-    text-align: center;
 
-    margin: 3rem;
-    bottom: 3rem;
-}
+    width: 80vw;
+    line-height: 8vw;
 
-@media screen and (min-width:600px) {
-
-    .pop_op .pop_box {
-        width: 90vw;
-        height: 100vh;
-        margin: 2vw auto;
-
-        background-color: white;
-        box-shadow: 0.4vw 0.4vw 2vw #D9D4D0;
-    }
-
-    .pop_op .exit {
-        width: 5vw;
-        height: 5vw;
-
-        position: fixed;
-        top: 2vw;
-        right: 3vw;
-
-        background-image: url(pics/exit.svg);
-        background-size: cover;
-    }
-
-    .pop_op .pop_billede {
-        width: 50vw;
-        height: 50vw;
-        object-fit: cover;
-
-        background-color: lightpink;
-        position: fixed;
-        top: 10vw;
-        left: 25vw;
-    }
-
-    .pop_op .beskrivelse {
-        position: fixed;
-        text-align: center;
-
-        margin: 3rem;
-        bottom: 3rem;
-    }
-
-
-}
-
-@media screen and (min-width:840px) {
-
-    .pop_op .pop_box {
-        width: 90vw;
-        height: 100vh;
-        margin: 2vw auto;
-
-        background-color: white;
-        box-shadow: 0.4vw 0.4vw 2vw #D9D4D0;
-    }
-
-    .pop_op .exit {
-        width: 5vw;
-        height: 5vw;
-
-        position: fixed;
-        top: 2vw;
-        right: 3vw;
-
-        background-image: url(pics/exit.svg);
-        background-size: cover;
-    }
-
-    .pop_op .pop_billede {
-        width: 40vw;
-        height: 40vw;
-        object-fit: cover;
-
-        background-color: lightpink;
-        position: fixed;
-        top: 5vw;
-        left: 30vw;
-    }
-
-    .pop_op .beskrivelse {
-        position: fixed;
-        text-align: center;
-
-        margin-left: 5rem;
-        margin-right: 5rem;
-    }
-
-
+    top: 75vw;
+    left: 10vw;
 }
 
 
@@ -401,3 +324,141 @@ button:hover {
 /*---- ANIMATIONER ----*/
 
 /*---- MEDIA QUERIES ----*/
+
+@media screen and (min-width:600px) {
+
+    .pop_op .pop_box {
+        width: 90vw;
+        height: 110vw;
+        margin: 2vw auto;
+
+        background-color: white;
+        box-shadow: 0.4vw 0.4vw 2vw #D9D4D0;
+    }
+
+    .pop_op .exit {
+        width: 6vw;
+        height: 6vw;
+
+        background-image: url(pics/exit.svg);
+        background-size: cover;
+    }
+
+    .pop_op .pop_billede {
+        width: 90vw;
+        height: 40vw;
+        object-fit: cover;
+
+        background-color: lightpink;
+        position: fixed;
+        top: 10vw;
+        left: 5vw;
+    }
+
+    .pop_op .beskrivelse {
+        position: fixed;
+        top: 50vw;
+        line-height: 6vw;
+    }
+
+    button {
+        font-family: 'great_wishesregular';
+        color: white;
+        background-color: #ff8fbb;
+        border-radius: 20px;
+        font-size: 1.3rem;
+        margin: 0.3rem;
+
+        cursor: pointer;
+    }
+
+
+}
+
+
+@media screen and (min-width:840px) {
+
+    .pop_op .pop_box {
+        width: 60vw;
+        height: 155vh;
+        margin: 2vw auto;
+
+        background-color: white;
+        box-shadow: 0.4vw 0.4vw 2vw #D9D4D0;
+    }
+
+    .pop_op .exit {
+        width: 5vw;
+        height: 5vw;
+
+        background-image: url(pics/exit.svg);
+        background-size: cover;
+    }
+
+    .pop_op .pop_billede {
+        width: 60vw;
+        height: 35vw;
+        object-fit: cover;
+
+        background-color: lightpink;
+        position: fixed;
+        top: 8vw;
+        left: 20vw;
+    }
+
+    .pop_op .beskrivelse {
+        position: fixed;
+        width: 50vw;
+        line-height: 3.5vw;
+
+        top: 43vw;
+        left: 25vw;
+
+    }
+
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    .pop_op .pop_box {
+        width: 60vw;
+        height: 155vh;
+        margin: auto;
+
+        background-color: white;
+        box-shadow: 0.4vw 0.4vw 2vw #D9D4D0;
+    }
+
+    .pop_op .exit {
+        width: 5vw;
+        height: 5vw;
+
+        background-image: url(pics/exit.svg);
+        background-size: cover;
+    }
+
+    .pop_op .pop_billede {
+        width: 60vw;
+        height: 25vw;
+        object-fit: cover;
+
+        background-color: lightpink;
+        position: fixed;
+        top: 5vw;
+        left: 20vw;
+    }
+
+    .pop_op .beskrivelse {
+        position: fixed;
+        width: 50vw;
+        line-height: 2vw;
+
+        top: 30vw;
+        left: 25vw;
+
+    }
+
+
+}
+
