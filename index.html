@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="da">
 
@@ -16,17 +15,21 @@
 
     <header>
 
-       <div class="logo_container"></div>
+        <div class="logo_container">
+            <img src="pics/logo_1.svg">
+        </div>
 
-            <nav>
 
-                <ul>
-                    <li><a href="#start">Start</a></li>
-                    <li><a href="#kager">Kager</a></li>
-                    <li><a href="#nyhedsbrev">Nyhedsbrev</a></li>
-                </ul>
 
-            </nav>
+        <nav id="navigation">
+
+            <ul>
+                <li><a href="#start">Start</a></li>
+                <li><a href="#kager">Kager</a></li>
+                <li><a href="#nyhedsbrev">Nyhedsbrev</a></li>
+            </ul>
+
+        </nav>
 
 
     </header>
@@ -34,19 +37,26 @@
     <section id="start">
 
 
-          <video preload="auto" autoplay="autoplay" type="video/mp4" src="video/video.mp4" loop muted>
-
-              <div class="start_txt">
-
-            <h1>Mangler du kager i dit liv?</h1>
-
-        </div>
+        <video preload="auto" autoplay="autoplay" type="video/mp4" src="video/video.mp4" loop muted>
 
 
-          </video>
+        </video>
 
 
     </section>
+
+    <div class="dropdown">
+        <button class="drop">FILTER KAGER</button>
+        <div class="dropdown-content">
+            <button class="filter valgt" data-kategori="alle" class="valgt">Alle</button>
+            <button class="filter" data-kategori="lagkage">Lagkage</button>
+            <button class="filter" data-kategori="taerte">Tærte</button>
+            <button class="filter" data-kategori="chokoladekage">Chokoladekage</button>
+            <button class="filter" data-kategori="cheesecake">Cheesecake</button>
+            <button class="filter" data-kategori="cupcake">Cupcake</button>
+
+        </div>
+    </div>
 
 
     <nav id="kager">
@@ -107,5 +117,6 @@
 
     <script src="script.js"></script>
 
-</body></html>
+</body>
 
+</html>
