@@ -160,7 +160,7 @@ header nav ul li:last-child a {
     padding: 0;
 
     width: 100vw;
-    height: 35vw;
+    height: 40vw;
 
 }
 
@@ -309,48 +309,46 @@ nav {
 
 /*---- NYHEDSBREV ----*/
 #nyhedsbrev {
-    height: 38vw;
-    width: 100vw;
+    height: 120%vw;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
 
-    background-image: url(img/jordbaertaerte.jpg);
-    background-size: cover;
-
-
-    margin: 2vw 0;
+    background-color: #C48573;
 }
 
 .nyhedsbrev_text {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'great_wishesregular';
     color: white;
+    margin: 2vw;
 
 }
 
 .nyhedsbrev_text p {
     font-size: 1.5rem;
+
 }
 
 .input-container {
     display: flex;
     width: 100%;
-    margin-bottom: 15px;
-    margin-left: 27vw;
-    margin-top: 5vw;
+    margin:  auto 2vw;
     cursor: pointer;
 
 }
 
 .input_text {
     background-color: lightpink;
-    color: black;
+    color: white;
     padding: 0.7vw;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
 }
 
 .input-field {
-    width: 40vw;
+    width: 60%;
     font-size: 1rem;
     font-family: 'Raleway', sans-serif;
     border: none;
