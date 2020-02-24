@@ -210,6 +210,8 @@ button:hover {
     font-family: 'great_wishesregular';
     font-size: 1.5rem;
     text-align: center;
+
+    height: 10vw;
 }
 
 .kage p {
@@ -224,7 +226,7 @@ button:hover {
 
 .pop_op {
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.7);
     top: 0;
@@ -235,7 +237,7 @@ button:hover {
 
 .pop_op .pop_box {
     width: 90vw;
-    height: 77%;
+    height: 150vh;;
 
     margin: 2vw auto;
 
@@ -292,8 +294,13 @@ button:hover {
     position: relative;
     margin-top: -39%;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
+    font-family: 'great_wishesregular';
 
+}
+
+.nyhedsbrev_text p {
+    font-size: 1.5rem;
 }
 
 .input-container {
@@ -301,19 +308,23 @@ button:hover {
     width: 100%;
     margin-bottom: 15px;
     margin-left: 27vw;
-    margin-top: 12vw;
+    margin-top: 5vw;
     cursor: pointer;
 
 }
 
 .input_text {
-    background-color: black;
+    background-color: lightpink;
     color: white;
     padding: 0.7vw;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
 }
 
 .input-field {
     width: 40vw;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 
