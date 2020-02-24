@@ -157,6 +157,11 @@ header nav ul li:last-child a {
     justify-content: center;
 }
 
+#navigation a:hover {
+    color: palevioletred;
+    transform: scale(1.1);
+}
+
 #start {
     margin: 0;
     padding: 0;
@@ -282,6 +287,11 @@ nav {
 
 }
 
+.pop_op .exit:hover {
+    opacity: 70%;
+    transform: scale(1.2);
+}
+
 .pop_op .pop_billede {
     width: 90vw;
     ;
@@ -338,7 +348,7 @@ nav {
     display: flex;
 
     width: 100vw;
-    margin:  0 15vw;
+    margin: 0 15vw;
 
     cursor: pointer;
 
@@ -361,7 +371,7 @@ nav {
     padding-left: 1vw;
 }
 
-::placeholder{
+::placeholder {
     color: lightpink;
 }
 
@@ -445,7 +455,7 @@ nav {
         opacity: 70%;
     }
 
-    .valgt{
+    .valgt {
         background-color: palevioletred;
     }
 
@@ -455,7 +465,7 @@ nav {
 
 @media screen and (min-width:840px) {
 
-    video{
+    video {
         height: 40vw;
     }
 
