@@ -84,28 +84,6 @@ header nav ul li:last-child a {
 }
 
 
-.filter {
-    text-align: center;
-}
-
-.filter ul li {
-    display: inline-block;
-    border: solid black 1px;
-    background-color: #A1734D;
-    color: white;
-    padding: 0.5vw;
-    margin: 1vw;
-    font-size: 1.5vw;
-    list-style: none;
-    cursor: pointer;
-    list-style: none;
-}
-
-
-.filter ul li:hover {
-    background: #FFE9B0;
-    color: black;
-}
 
 
 /*---- START ----*/
@@ -145,11 +123,7 @@ video{
 
 
 /*-- FILTER --*/
-/*
-nav .button {
-    text-align: center;
-}
-*/
+
 
 nav {
     display: flex;
@@ -282,20 +256,22 @@ button:hover {
 
 
 /*---- NYHEDSBREV ----*/
-.nyhedsbrev_billede img {
+#nyhedsbrev {
     height: 38vw;
     width: 100vw;
-    object-fit: cover;
-    padding-top: 3vw;
-    z-index: -1;
+
+    background-image: url(img/jordbaertaerte.jpg);
+    background-size: cover;
+
+
+    margin: 2vw 0;
 }
 
 .nyhedsbrev_text {
-    position: relative;
-    margin-top: -39%;
     text-align: center;
     font-size: 3rem;
     font-family: 'great_wishesregular';
+    color: white;
 
 }
 
@@ -325,6 +301,8 @@ button:hover {
     width: 40vw;
     font-size: 1rem;
     font-family: 'Raleway', sans-serif;
+    border: none;
+    padding-left: 1vw;
 }
 
 
