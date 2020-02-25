@@ -4,12 +4,14 @@
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
 html {
     scroll-behavior: smooth;
+    margin: 0 auto;
+    padding: 0;
 }
 
 p {
@@ -170,13 +172,13 @@ header nav ul li:last-child a {
     margin: 0;
     padding: 0;
 
-    width: 100vw;
+    width: 100%;
     height: 100%;
 
 }
 
 video {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 
     width: 100%;
@@ -196,7 +198,7 @@ video {
 /*-- FILTER --*/
 
 
-nav {
+.filter_nav {
     display: none;
 }
 
@@ -319,7 +321,7 @@ nav {
 
 /*---- NYHEDSBREV ----*/
 #nyhedsbrev {
-    height: 100vw;
+    height: 70vw;
     width: 100vw;
     margin-left: auto;
     margin-right: auto;
@@ -379,7 +381,36 @@ nav {
 
 /*---- FOOTER ----*/
 
+footer {
+    background-color: palevioletred;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
 
+.footer_nav {
+    margin: 0;
+}
+
+.footer_nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer_nav ul li {
+    list-style-type: none;
+    text-align: center;
+    padding: 1vw;
+}
+
+.footer_nav ul li a {
+
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem
+}
 
 /*---- ANIMATIONER ----*/
 
@@ -431,7 +462,7 @@ nav {
         justify-content: flex-end;
     }
 
-    nav {
+    .filter_nav {
         display: flex;
         justify-content: center;
         margin-top: 2vw;
@@ -461,7 +492,7 @@ nav {
     }
 
     #nyhedsbrev {
-    height: 50vw;
+        height: 50vw;
 
     }
 
@@ -570,6 +601,7 @@ nav {
         font-size: 2rem;
         font-family: 'great_wishesregular';
         color: white;
+        padding: 0;
 
 
     }
@@ -586,8 +618,8 @@ nav {
     .input-container {
         display: flex;
 
-        width: 100vw;
-        margin: 0 15vw;
+        width: 60vw;
+        margin: 0 auto;
 
         cursor: pointer;
 
@@ -596,18 +628,18 @@ nav {
     .input_text {
         background-color: palevioletred;
         color: white;
-        padding: 0.7vw;
+        padding: 0.4vw;
         font-family: 'Raleway', sans-serif;
         font-size: 1rem;
     }
 
     .input-field {
         color: palevioletred;
-        width: 60vw;
+        width: 50vw;
         font-size: 1rem;
         font-family: 'Raleway', sans-serif;
         border: none;
-        padding-left: 1vw;
+        margin: 0;
     }
 
 
