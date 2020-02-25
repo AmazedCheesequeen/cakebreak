@@ -1,15 +1,18 @@
 document.addEventListener("DOMContentLoaded", start);
 
-
+//jSon spreadshit ID
 const idSheet = "1VOJFzxDUXd83bzMEyk91RS-yCpbE2FJQ1e7HotTucYc";
 const endpoint = `https://spreadsheets.google.com/feeds/list/${idSheet}/od6/public/values?alt=json`;
 
+
+//variabler
 let kager = [];
 let knapFilter = document.querySelectorAll(".filter");
 let filter = "alle";
 
 
 
+//load-animation
 function start() {
     console.log("load");
     loadData();
@@ -21,6 +24,8 @@ function start() {
     });
 }
 
+
+//fetch jSon
 async function loadData() {
     const response = await fetch(endpoint);
     kager = await response.json();

@@ -18,9 +18,14 @@ p {
     font-family: 'Raleway', sans-serif;
 }
 
+
+
+
+
 /*---- FONT ----*/
 
 
+/*-font hentet fra DaFont og genereret via fontsquirrel-*/
 @font-face {
     font-family: 'great_wishesregular';
     src: url('font/great_wishes-webfont.woff2') format('woff2'),
@@ -30,7 +35,12 @@ p {
 
 }
 
-/*---- NAVIGATIONSBAR ----*/
+
+
+
+
+
+/*---- TOP-NAV/NAVIGATIONSBAR ----*/
 
 header {
     display: inline;
@@ -38,7 +48,6 @@ header {
     height: 100%;
     margin: 0;
     padding: 0;
-
     z-index: 3;
 
 }
@@ -88,11 +97,29 @@ header nav ul li:last-child a {
 }
 
 
+#navigation {
+    display: flex;
+    justify-content: center;
+}
+
+#navigation a:hover {
+    color: palevioletred;
+    transform: scale(1.1);
+}
+
+
+
+
+
 
 
 
 /*----- dropdown menu ------*/
 
+/*- dropdown-menu koden er hentet fra w3schools, koden er tilpasset og ændret til sidens behov-*/
+
+
+/*- styling på selve knappen -*/
 .drop {
     font-family: 'Raleway', sans-serif;
     font-size: 5vw;
@@ -104,10 +131,10 @@ header nav ul li:last-child a {
     border: none;
     padding: 2vw;
     margin-top: 4vw;
-
 }
 
 
+/*- dropdown-menuens position -*/
 .dropdown {
     width: 50%;
     margin-left: auto;
@@ -116,6 +143,8 @@ header nav ul li:last-child a {
     text-align: center;
 }
 
+
+/*- selve indholdet der skal vises -*/
 .dropdown-content {
     display: none;
     box-shadow: 0.9vw 0.5vw 2vw #D9D4D0;
@@ -123,6 +152,8 @@ header nav ul li:last-child a {
 
 }
 
+
+/*- styling af links i boksen -*/
 .dropdown-content button {
     font-family: 'Raleway', sans-serif;
     font-size: 4vw;
@@ -138,6 +169,8 @@ header nav ul li:last-child a {
     display: block;
 }
 
+
+/*- hover effekter på knapper -*/
 .dropdown-content button:hover {
     transform: scale(1.2);
 }
@@ -156,17 +189,14 @@ header nav ul li:last-child a {
 
 
 
+
+
+
+
 /*---- START ----*/
 
-#navigation {
-    display: flex;
-    justify-content: center;
-}
 
-#navigation a:hover {
-    color: palevioletred;
-    transform: scale(1.1);
-}
+/*- splashvideo-*/
 
 #start {
     margin: 0;
@@ -177,6 +207,7 @@ header nav ul li:last-child a {
 
 }
 
+/*- tilpasning af størrelse-*/
 video {
     margin: 0 auto;
     padding: 0;
@@ -191,16 +222,21 @@ video {
 
 
 
-/*---- KAGER ----*/
 
 
 
-/*-- FILTER --*/
 
 
+
+/*-- FILTER KNAPPER --*/
+
+
+/*- filterknapper displays ikke under 600px, da vi bruger dropdown-menuen til mobilversion-*/
 .filter_nav {
     display: none;
 }
+
+
 
 
 
@@ -213,6 +249,10 @@ video {
     grid-gap: 2rem;
     padding: 0 10vw;
 }
+
+
+/*- styling af indholdet i grid: billeder, tekster og farver-*/
+
 
 .kage {
     padding: 3vw;
@@ -253,7 +293,13 @@ video {
 }
 
 
+
+
+
+
 /*---- POP OP ----*/
+
+/*- styling af pop-op-*/
 
 .pop_op {
     width: 100vw;
@@ -319,15 +365,22 @@ video {
 
 
 
+
+
+
 /*---- NYHEDSBREV ----*/
+
+
+
+/*- nyhedsbrev position og størrelse-*/
 #nyhedsbrev {
     height: 70vw;
     width: 100vw;
     margin-left: auto;
     margin-right: auto;
-
     background-color: lightpink;
 }
+
 
 .nyhedsbrev_text {
     text-align: center;
@@ -335,8 +388,10 @@ video {
     font-family: 'great_wishesregular';
     color: white;
 
-
 }
+
+
+/*- styling af tekst-*/
 
 .nyhedsbrev_text h2 {
     padding-top: 1vw;
@@ -346,6 +401,9 @@ video {
     font-size: 1.5rem;
 
 }
+
+
+/*- input container position-*/
 
 .input-container {
     display: flex;
@@ -357,6 +415,8 @@ video {
 
 }
 
+/*- styling af input-container-*/
+
 .input_text {
     background-color: palevioletred;
     color: white;
@@ -365,9 +425,9 @@ video {
     font-size: 1rem;
 }
 
-.input_text:hover{
+.input_text:hover {
     background-color: mistyrose;
-    color:palevioletred;
+    color: palevioletred;
 
 }
 
@@ -385,7 +445,17 @@ video {
 }
 
 
+
+
+
+
+
+
+
 /*---- FOOTER ----*/
+
+
+/*- styling af footer-*/
 
 footer {
     background-color: palevioletred;
@@ -418,7 +488,19 @@ footer {
     font-size: 1.4rem
 }
 
+
+
+
+
+
+
+
+
+
 /*---- ANIMATIONER ----*/
+
+
+/*- animation starter ved load af siden-*/
 
 .fade_in_slide {
     animation-name: fade_in_slide_kf;
@@ -445,7 +527,15 @@ footer {
     }
 }
 
+
+
+
+
+
+
+
 /*---- MEDIA QUERIES ----*/
+
 
 @media screen and (min-width:600px) {
 
@@ -505,7 +595,7 @@ footer {
         background-color: lightpink;
         border: none;
         border-radius: 20vw;
-        font-size: 2.7vw;
+        font-size: 2.2vw;
         margin: 0.8vw;
         padding: 1vw;
 
@@ -530,6 +620,12 @@ footer {
 
 
 }
+
+
+
+
+
+
 
 
 @media screen and (min-width:840px) {
@@ -578,6 +674,13 @@ footer {
 
 
 }
+
+
+
+
+
+
+
 
 @media screen and (min-width: 1000px) {
 

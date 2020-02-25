@@ -24,10 +24,8 @@
 
     <header>
 
-
+        <!-- top-nav/menu -->
         <nav id="navigation">
-
-
 
             <ul>
                 <li><a href="#start">Start</a></li>
@@ -37,23 +35,29 @@
 
         </nav>
 
-
     </header>
+
+
+
+
+    <!-- splashbillede/video -->
 
     <section id="start">
 
-
         <video preload="auto" autoplay="autoplay" type="video/mp4" src="video/video_2.mp4" loop muted>
-
 
         </video>
 
-
     </section>
+
+
+
+
 
     <section id="kager">
 
 
+        <!-- dropdown-menu til mobilversion -->
 
         <div class="dropdown">
             <button class="drop">FILTER KAGER</button>
@@ -70,6 +74,7 @@
 
 
 
+        <!-- filter-sorterings knapper -->
 
         <nav class="filter_nav">
             <button class="filter valgt" data-kategori="alle">Alle</button>
@@ -83,6 +88,11 @@
     </section>
 
 
+
+
+
+    <!-- Container og template til js og jSon indhold -->
+
     <section class="data_container"></section>
 
     <template>
@@ -94,6 +104,13 @@
 
         </article>
     </template>
+
+
+
+
+
+
+    <!-- pop-op -->
 
     <div class="pop_op">
 
@@ -107,11 +124,18 @@
 
     </div>
 
+
+
+    <!-- nyhedsbrev -->
+
     <section id="nyhedsbrev">
         <div class="nyhedsbrev_text">
             <h2>NYHEDS BREV</h2>
             <p>Vil du se flere kager? Så skriv dig op til vores nyhedsbrev og se en ny kage hver uge!</p>
         </div>
+
+
+        <!-- unput container så man kan indtaste "email" til abbonnering pås nyhedsbrev -->
 
         <div class="input-container">
             <div class="input_text">
@@ -121,8 +145,15 @@
         </div>
     </section>
 
-    <footer>
 
+
+
+
+
+
+    <!-- footer -->
+
+    <footer>
         <nav class="footer_nav">
 
             <ul>
@@ -133,8 +164,10 @@
             </ul>
 
         </nav>
-
     </footer>
+
+
+
 
     <script src="script.js"></script>
 
