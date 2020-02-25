@@ -38,6 +38,7 @@ header {
     padding: 0;
 
     z-index: 3;
+
 }
 
 header nav {
@@ -45,6 +46,8 @@ header nav {
     width: 100%;
     height: 100%;
 }
+
+
 
 header nav ul li {
     display: inline;
@@ -127,6 +130,7 @@ header nav ul li:last-child a {
     margin-right: auto;
     margin-top: 3vw;
     margin-bottom: 3vw;
+    background-color: white;
 
 
     display: block;
@@ -181,13 +185,6 @@ video {
     object-fit: cover;
 
     z-index: -1;
-}
-
-.start_txt {
-    color: lightblue;
-    font-size: 2em;
-    padding: 4vw;
-    font-family: 'great_wishesregular';
 }
 
 
@@ -322,7 +319,7 @@ nav {
 
 /*---- NYHEDSBREV ----*/
 #nyhedsbrev {
-    height: 30vw;
+    height: 100vw;
     width: 100vw;
     margin-left: auto;
     margin-right: auto;
@@ -332,11 +329,15 @@ nav {
 
 .nyhedsbrev_text {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'great_wishesregular';
     color: white;
-    margin: 2vw;
 
+
+}
+
+.nyhedsbrev_text h2 {
+    padding-top: 1vw;
 }
 
 .nyhedsbrev_text p {
@@ -347,8 +348,8 @@ nav {
 .input-container {
     display: flex;
 
-    width: 100vw;
-    margin: 0 15vw;
+    width: 70vw;
+    margin: 0 auto;
 
     cursor: pointer;
 
@@ -364,7 +365,7 @@ nav {
 
 .input-field {
     color: palevioletred;
-    width: 60vw;
+    width: 50vw;
     font-size: 1rem;
     font-family: 'Raleway', sans-serif;
     border: none;
@@ -459,6 +460,11 @@ nav {
         background-color: palevioletred;
     }
 
+    #nyhedsbrev {
+    height: 50vw;
+
+    }
+
 
 }
 
@@ -548,6 +554,60 @@ nav {
         top: 30vw;
         left: 25vw;
 
+    }
+
+    #nyhedsbrev {
+        height: 30vw;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+
+        background-color: lightpink;
+    }
+
+    .nyhedsbrev_text {
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'great_wishesregular';
+        color: white;
+
+
+    }
+
+    .nyhedsbrev_text h2 {
+        padding-top: 1vw;
+    }
+
+    .nyhedsbrev_text p {
+        font-size: 1.5rem;
+
+    }
+
+    .input-container {
+        display: flex;
+
+        width: 100vw;
+        margin: 0 15vw;
+
+        cursor: pointer;
+
+    }
+
+    .input_text {
+        background-color: palevioletred;
+        color: white;
+        padding: 0.7vw;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1rem;
+    }
+
+    .input-field {
+        color: palevioletred;
+        width: 60vw;
+        font-size: 1rem;
+        font-family: 'Raleway', sans-serif;
+        border: none;
+        padding-left: 1vw;
     }
 
 
