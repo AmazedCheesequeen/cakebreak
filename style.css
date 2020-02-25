@@ -414,6 +414,31 @@ footer {
 
 /*---- ANIMATIONER ----*/
 
+.fade_in_slide {
+    animation-name: fade_in_slide_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+@keyframes fade_in_slide_kf {
+
+    from {
+        opacity: 0;
+        transform: translateY(-7vw);
+
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
 /*---- MEDIA QUERIES ----*/
 
 @media screen and (min-width:600px) {
@@ -476,6 +501,7 @@ footer {
         border-radius: 20vw;
         font-size: 2.7vw;
         margin: 0.8vw;
+        padding: 1vw;
 
         cursor: pointer;
     }
@@ -589,7 +615,7 @@ footer {
 
     #nyhedsbrev {
         height: 30vw;
-        width: 100vw;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
 

@@ -14,6 +14,8 @@ function start() {
     console.log("load");
     loadData();
 
+    document.querySelector("body").classList.add("fade_in_slide");
+
     knapFilter.forEach(knap => {
         knap.addEventListener("click", filtrerKager)
     });
