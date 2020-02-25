@@ -4,12 +4,14 @@
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
 html {
     scroll-behavior: smooth;
+    margin: 0 auto;
+    padding: 0;
 }
 
 p {
@@ -170,13 +172,13 @@ header nav ul li:last-child a {
     margin: 0;
     padding: 0;
 
-    width: 100vw;
+    width: 100%;
     height: 100%;
 
 }
 
 video {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 
     width: 100%;
@@ -196,7 +198,7 @@ video {
 /*-- FILTER --*/
 
 
-nav {
+.filter_nav {
     display: none;
 }
 
@@ -319,7 +321,7 @@ nav {
 
 /*---- NYHEDSBREV ----*/
 #nyhedsbrev {
-    height: 100vw;
+    height: 70vw;
     width: 100vw;
     margin-left: auto;
     margin-right: auto;
@@ -363,6 +365,12 @@ nav {
     font-size: 1rem;
 }
 
+.input_text:hover{
+    background-color: mistyrose;
+    color:palevioletred;
+
+}
+
 .input-field {
     color: palevioletred;
     width: 50vw;
@@ -379,9 +387,63 @@ nav {
 
 /*---- FOOTER ----*/
 
+footer {
+    background-color: palevioletred;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
 
+.footer_nav {
+    margin: 0;
+}
+
+.footer_nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer_nav ul li {
+    list-style-type: none;
+    text-align: center;
+    padding: 1vw;
+}
+
+.footer_nav ul li a {
+
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem
+}
 
 /*---- ANIMATIONER ----*/
+
+.fade_in_slide {
+    animation-name: fade_in_slide_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+@keyframes fade_in_slide_kf {
+
+    from {
+        opacity: 0;
+        transform: translateY(-2vw);
+
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
 
 /*---- MEDIA QUERIES ----*/
 
@@ -431,7 +493,7 @@ nav {
         justify-content: flex-end;
     }
 
-    nav {
+    .filter_nav {
         display: flex;
         justify-content: center;
         margin-top: 2vw;
@@ -445,6 +507,7 @@ nav {
         border-radius: 20vw;
         font-size: 2.7vw;
         margin: 0.8vw;
+        padding: 1vw;
 
         cursor: pointer;
     }
@@ -461,7 +524,7 @@ nav {
     }
 
     #nyhedsbrev {
-    height: 50vw;
+        height: 50vw;
 
     }
 
@@ -558,7 +621,7 @@ nav {
 
     #nyhedsbrev {
         height: 30vw;
-        width: 100vw;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
 
@@ -570,6 +633,7 @@ nav {
         font-size: 2rem;
         font-family: 'great_wishesregular';
         color: white;
+        padding: 0;
 
 
     }
@@ -586,8 +650,8 @@ nav {
     .input-container {
         display: flex;
 
-        width: 100vw;
-        margin: 0 15vw;
+        width: 60vw;
+        margin: 0 auto;
 
         cursor: pointer;
 
@@ -596,18 +660,18 @@ nav {
     .input_text {
         background-color: palevioletred;
         color: white;
-        padding: 0.7vw;
+        padding: 0.4vw;
         font-family: 'Raleway', sans-serif;
         font-size: 1rem;
     }
 
     .input-field {
         color: palevioletred;
-        width: 60vw;
+        width: 50vw;
         font-size: 1rem;
         font-family: 'Raleway', sans-serif;
         border: none;
-        padding-left: 1vw;
+        margin: 0;
     }
 
 
