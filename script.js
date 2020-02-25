@@ -26,7 +26,7 @@ async function loadData() {
     visKager();
 }
 
-
+// Tilføj bestemt klasse til den aktive filter knap
 function filtrerKager() {
     filter = this.dataset.kategori;
     document.querySelector(".valgt").classList.remove("valgt");
@@ -34,7 +34,10 @@ function filtrerKager() {
     visKager();
 }
 
+//Opbyg de kloner af json fil der bruges til grid
 function visKager() {
+
+    //Sæt variabler
     let container = document.querySelector(".data_container");
     let template = document.querySelector("template");
     let article = document.querySelector("article");
@@ -46,10 +49,8 @@ function visKager() {
             let klon = template.cloneNode(true).content;
             klon.querySelector("h2").textContent = kage.gsx$navn.$t;
             klon.querySelector(".billede").src = `../img/${kage.gsx$billede.$t}.jpg`;
-            //klon.querySelector(".navn").textContent += kage.gsx$kategori.$t;
-            //klon.querySelector(".beskrivelse").textContent += kage.gsx$beskrivelse.$t;
 
-            //Bruges til at vide hvornår pop up skal sættes op (jeg skal lige spørge en ven om alt det tekniske bag det så kommer jeg med en bedre forklaring)
+            //Bruges til at vide hvornår pop up skal sættes op
 
             let event = klon.querySelector(".billede");
 
@@ -62,6 +63,7 @@ function visKager() {
     });
 }
 
+//Vis pop op skærm for det klikkede billede
 function popOp(event) {
 
     let popOpScreen = document.querySelector(".pop_op");
@@ -88,10 +90,9 @@ function popOp(event) {
 
 }
 
+
+//Fjern pop op skærm og eventlistener
 function popGone() {
-
-    //Fjern pop op skærm og eventlistener
-
     document.querySelector(".pop_op").style.display = "none";
     document.querySelector(".exit").removeEventListener("click", popGone)
 
