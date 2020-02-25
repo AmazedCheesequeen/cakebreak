@@ -365,6 +365,12 @@ video {
     font-size: 1rem;
 }
 
+.input_text:hover{
+    background-color: mistyrose;
+    color:palevioletred;
+
+}
+
 .input-field {
     color: palevioletred;
     width: 50vw;
@@ -416,7 +422,7 @@ footer {
 
 .fade_in_slide {
     animation-name: fade_in_slide_kf;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
     animation-timing-function: ease;
     animation-fill-mode: both;
@@ -426,7 +432,7 @@ footer {
 
     from {
         opacity: 0;
-        transform: translateY(-7vw);
+        transform: translateY(-2vw);
 
 
     }
