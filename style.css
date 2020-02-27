@@ -314,13 +314,14 @@ video {
 
 .pop_op .pop_box {
     width: 90vw;
-    height: 150vh;
+    height: 100%
     ;
 
     margin: 2vw auto;
 
     background-color: white;
     box-shadow: 0.4vw 0.4vw 2vw #D9D4D0;
+
 }
 
 .pop_op .exit {
@@ -339,7 +340,6 @@ video {
 
 .pop_op .pop_billede {
     width: 90vw;
-    ;
     height: 60vw;
     object-fit: cover;
 
@@ -359,13 +359,6 @@ video {
     top: 75vw;
     left: 10vw;
 }
-
-
-
-
-
-
-
 
 
 /*---- NYHEDSBREV ----*/
@@ -500,7 +493,7 @@ footer {
 /*---- ANIMATIONER ----*/
 
 
-/*- animation starter ved load af siden-*/
+/*- animation starter ved load af siden og når man klikker på billede-*/
 
 .fade_in_slide {
     animation-name: fade_in_slide_kf;
@@ -526,9 +519,6 @@ footer {
 
     }
 }
-
-
-
 
 
 

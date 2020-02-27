@@ -56,6 +56,7 @@ function visKager() {
             let klon = template.cloneNode(true).content;
             klon.querySelector("h2").textContent = kage.gsx$navn.$t;
             klon.querySelector(".billede").src = `../img/${kage.gsx$billede.$t}.jpg`;
+            klon.querySelector(".billede").alt = kage.gsx$navn.$t;
 
             //Bruges til at vide hvornår pop up skal sættes op
 
@@ -91,6 +92,10 @@ function popOp(event) {
 
     document.querySelector(".pop_op").style.display = "block";
 
+    //Tilføj animation
+
+    document.querySelector(".pop_op").classList.add("fade_in_slide");
+
     //Tilføj eventlistener så man kan trykke væk fra pop op igen
 
     document.querySelector(".exit").addEventListener("click", popGone)
@@ -100,6 +105,7 @@ function popOp(event) {
 
 //Fjern pop op skærm og eventlistener
 function popGone() {
+    document.querySelector(".pop_op").classList.remove("fade_in_slide");
     document.querySelector(".pop_op").style.display = "none";
     document.querySelector(".exit").removeEventListener("click", popGone)
 
