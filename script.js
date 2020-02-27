@@ -55,7 +55,7 @@ function visKager() {
         if (kage.gsx$kategori.$t == filter || filter == "alle") {
             let klon = template.cloneNode(true).content;
             klon.querySelector("h2").textContent = kage.gsx$navn.$t;
-            klon.querySelector(".billede").src = `../img/${kage.gsx$billede.$t}.jpg`;
+            klon.querySelector(".billede").src = `../cakebreak/img/${kage.gsx$billede.$t}.jpg`;
             klon.querySelector(".billede").alt = kage.gsx$navn.$t;
 
             //Bruges til at vide hvornår pop up skal sættes op
@@ -81,7 +81,7 @@ function popOp(event) {
 
     //Insæt billede med alt og src
 
-    popOpScreen.querySelector(".pop_billede").src = "../img/" + jsonPop.gsx$billede.$t + ".jpg";
+    popOpScreen.querySelector(".pop_billede").src = "../cakebreak/img/" + jsonPop.gsx$billede.$t + ".jpg";
 
     popOpScreen.querySelector(".pop_billede").alt = jsonPop.gsx$navn.$t;
 
